@@ -1,0 +1,48 @@
+
+// NSLocalizedString("love", comment: "")
+// Onboarding + Settings
+
+"chooseCategory" = "Choose a Category";
+"love" = "Love";
+"friendship" = "Friendship";
+"backgroundColor" = "Choose a Background Color";
+"blue" = "Blue";
+"red" = "Red";
+"genderTitle" = "Choose Your Gender";
+"male" = "Male";
+"female" = "Female";
+
+"categoryTitle" = "Category";
+"color" = "Color";
+"genderWord" = "Gender";
+"chooseLanguage" = "Choose language";
+"languageSettings" = "Language settings";
+"enRu" = "English / Русский";
+
+// Categories
+
+// Аффирмации в категории “Love”:
+
+"Love_0" = "I am worthy of love and deserve to receive love in abundance";
+"Love_1" = "My heart is open to giving and receiving love";
+"Love_2" = "I am surrounded by love every day and in every way";
+"Love_3" = "I attract love and loving relationships into my life";
+"Love_4" = "Love flows to me and through me effortlessly";
+"Love_5" = "I radiate love and others reflect love back to me";
+"Love_6" = "My relationships are filled with love, happiness, and respect";
+"Love_7" = "I am grateful for the love that surrounds me";
+"Love_8" = "Love comes to me easily and effortlessly";
+"Love_9" = "I am a magnet for loving and fulfilling relationships";
+
+// Аффирмации в категории “Friendship”:
+
+"Friendship_0" = "I am surrounded by supportive and loving friends";
+"Friendship_1" = "I attract positive and loyal friendships into my life";
+"Friendship_2" = "My friends and I share mutual respect and trust";
+"Friendship_3" = "I am a kind and caring friend, and I receive the same in return";
+"Friendship_4" = "My friendships are filled with joy, laughter, and understanding";
+"Friendship_5" = "I am grateful for the amazing friends in my life";
+"Friendship_6" = "I nurture and cherish my friendships";
+"Friendship_7" = "I attract friends who support and uplift me";
+"Friendship_8" = "My friends and I grow together in love and harmony";
+"Friendship_9" = "I am a magnet for genuine and lasting friendships";
