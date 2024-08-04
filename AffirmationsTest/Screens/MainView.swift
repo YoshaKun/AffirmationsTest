@@ -9,18 +9,18 @@ import SwiftUI
 import CoreData
 
 struct MainView: View {
-    @Environment(\.managedObjectContext) private var viewContext
     
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+    // MARK: - UserDefaults parameters
     
     @AppStorage("cathegoryChoosed") private var selectedCategory = ""
     @AppStorage("backgroundColorChoosed") private var selectedColor = ""
     @AppStorage("genderChoosed") private var selectedGender = ""
     
+    // MARK: - Count of items in each Category
+    
     let categoriesCount = 10
+    
+    // MARK: - Body
     
     var body: some View {
         NavigationView {
@@ -46,6 +46,8 @@ struct MainView: View {
         }
     }
     
+    // MARK: - configure Background color
+    
     @ViewBuilder
     private func configureBackground() -> some View {
         if selectedColor == "Blue" {
@@ -56,6 +58,8 @@ struct MainView: View {
                 .ignoresSafeArea()
         }
     }
+    
+    // MARK: - configure vertical Tab view
     
     @ViewBuilder
     private func configureTabView() -> some View {
@@ -79,7 +83,10 @@ struct MainView: View {
         .frame(width: UIScreen.main.bounds.height, height: UIScreen.main.bounds.width)
     }
     
+    // MARK: - Generator localization array from selected Category
+    
     private func generateCategoryArray(nameCategory: String, elements: Int) -> [String] {
+        // target string need to be like this: "String_0" -> nameCategory + "_" + "currentElement"
         var resultArray: [String] = []
         
         for i in 0..<elements {

@@ -66,14 +66,13 @@
 		6B5161612C5FAC4200CFBB28 /* AffirmationsTest */ = {
 			isa = PBXGroup;
 			children = (
-				6B5161842C5FE54300CFBB28 /* Managers */,
+				6B5161882C5FE8AD00CFBB28 /* CoreDataManager */,
+				6B5161872C5FE86000CFBB28 /* Application */,
+				6B5161842C5FE54300CFBB28 /* Constants */,
 				6B5161832C5FCF7900CFBB28 /* CustomViews */,
 				6B5161822C5FCF4000CFBB28 /* Screens */,
 				6B51617B2C5FACD100CFBB28 /* LocalizationFiles */,
-				6B5161622C5FAC4200CFBB28 /* AffirmationsTestApp.swift */,
 				6B5161662C5FAC4400CFBB28 /* Assets.xcassets */,
-				6B51616B2C5FAC4400CFBB28 /* Persistence.swift */,
-				6B51616D2C5FAC4400CFBB28 /* AffirmationsTest.xcdatamodeld */,
 				6B5161682C5FAC4400CFBB28 /* Preview Content */,
 			);
 			path = AffirmationsTest;
@@ -113,12 +112,29 @@
 			path = CustomViews;
 			sourceTree = "<group>";
 		};
-		6B5161842C5FE54300CFBB28 /* Managers */ = {
+		6B5161842C5FE54300CFBB28 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
 				6B5161852C5FE55100CFBB28 /* Constants.swift */,
 			);
-			path = Managers;
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		6B5161872C5FE86000CFBB28 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6B5161622C5FAC4200CFBB28 /* AffirmationsTestApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6B5161882C5FE8AD00CFBB28 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				6B51616B2C5FAC4400CFBB28 /* Persistence.swift */,
+				6B51616D2C5FAC4400CFBB28 /* AffirmationsTest.xcdatamodeld */,
+			);
+			path = CoreDataManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
