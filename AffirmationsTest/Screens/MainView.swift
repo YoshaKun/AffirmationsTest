@@ -31,6 +31,12 @@ struct MainView: View {
                 
                 VStack() {
                     HStack() {
+                        NavigationLink(destination: SearchView()) {
+                            Image(systemName: "magnifyingglass")
+                                .resizable()
+                                .foregroundStyle(Color(.white))
+                                .frame(width: 40, height: 40)
+                        }
                         Spacer()
                         NavigationLink(destination: SettingsView()) {
                             Image(systemName: "gear")
@@ -40,6 +46,7 @@ struct MainView: View {
                         }
                     }
                     .padding(.trailing)
+                    .padding(.leading)
                     Spacer()
                 }.frame(width: UIScreen.main.bounds.width)
             }
